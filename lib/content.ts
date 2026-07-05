@@ -106,7 +106,7 @@ export const WORK_PROJECTS: Project[] = [
 ];
 
 export const NOW_CONTENT: NowItem = {
-  label: "ET AI Hackathon 2.0 · Phase 2 · due July 22",
+  label: "Ascent Scaler Hackathon · Phase 2 · due July 22",
   title: "Industrial Operations Brain",
   description: "A proactive multi-agent system for industrial knowledge intelligence — live ops dashboard, an AI Daily Brief, Machine Digital Twin pages, an Expert Copilot chat, a knowledge graph, and a standing Compliance Agent. Built on a genuinely zero-cost stack.",
   chips: ["Gemini 2.0 Flash", "Groq Llama 3.3 70B", "bge-small-en-v1.5", "Neo4j Aura", "Supabase pgvector", "Render", "Vercel"]
@@ -139,9 +139,9 @@ export const HONORS_LIST: HonorItem[] = [
     description: "ILAP — identity & access management for the enterprise."
   },
   {
-    award: "Shortlisted",
-    event: "ET AI Hackathon 2.0",
-    description: "Phase 2, by The Economic Times — Industrial Operations Brain."
+    award: "Finalist",
+    event: "Ascent Scaler Hackathon",
+    description: "Industrial Operations Brain — proactive multi-agent system for industrial knowledge intelligence."
   }
 ];
 
