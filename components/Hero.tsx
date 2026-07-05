@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="w-full pt-12 pb-16 md:pt-20 md:pb-24 hairline-b">
       <div className="max-w-[920px] mx-auto px-6 sm:px-7">
-        <div className="flex flex-col-reverse md:flex-row gap-8 md:gap-12 items-start justify-between">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start justify-between">
 
           {/* Left Column: Text Content */}
           <div className="flex-1 w-full md:max-w-[580px]">
@@ -38,7 +38,7 @@ export default function Hero() {
           </div>
 
           {/* Right Column: Headshot with blueprint offset box */}
-          <div className="relative w-[200px] sm:w-[260px] md:w-[380px] shrink-0 mx-auto md:mx-0 select-none pb-4 pr-4">
+          <div className="relative w-[200px] sm:w-[260px] md:w-[380px] max-w-full shrink-0 mx-auto md:mx-0 select-none pb-4 pr-4 mt-6 md:mt-0">
             {/* Offset alignment box — blueprint feel */}
             <div className="absolute inset-0 border border-line translate-x-4 translate-y-4 rounded-[3px] z-0" />
 

@@ -57,12 +57,12 @@ export default function Work() {
               }`}
             >
               {/* Title & Tag Row */}
-              <div className="flex items-start justify-between gap-4">
+              <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 sm:gap-4">
                 <h3 className="font-display font-[450] text-2xl sm:text-3xl text-ink leading-none">
                   {project.title}
                 </h3>
                 <span
-                  className={`font-mono text-[9px] sm:text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 border rounded-[3px] select-none whitespace-nowrap ${
+                  className={`font-mono text-[9px] sm:text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 border rounded-[3px] select-none w-fit ${
                     project.isAmberTag
                       ? "border-amber text-amber"
                       : "border-indigo-soft text-indigo"
