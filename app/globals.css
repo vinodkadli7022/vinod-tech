@@ -1,26 +1,119 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --cream: #F5F1E8;      /* page background */
+  --cream-2: #EFE9DB;    /* subtle panel background */
+  --ink: #1C1B17;        /* primary text */
+  --ink-soft: #45443C;   /* secondary text */
+  --muted: #8A8578;      /* tertiary text / labels */
+  --line: #DCD5C3;       /* hairline borders */
+  --indigo: #26418F;     /* primary accent — links, active states, the pipeline animation */
+  --indigo-soft: #ADBEE0;/* accent border, low-emphasis */
+  --amber: #B8860B;      /* reserved ONLY for "winner"/achievement tags — do not overuse */
+  --white: #FFFDF8;      /* card backgrounds */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --color-cream: var(--cream);
+  --color-cream-2: var(--cream-2);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-indigo: var(--indigo);
+  --color-indigo-soft: var(--indigo-soft);
+  --color-amber: var(--amber);
+  --color-white: var(--white);
+
+  --font-display: var(--font-fraunces), serif;
+  --font-sans: var(--font-inter), sans-serif;
+  --font-mono: var(--font-mono), monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Global Reset & Base Styles */
+body {
+  background-color: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-inter), sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom global outline styles for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--indigo) !important;
+  outline-offset: 2px !important;
+}
+
+/* Selection highlight */
+::selection {
+  background-color: var(--indigo-soft);
+  color: var(--ink);
+}
+
+/* Custom Utilities */
+.hairline-b {
+  border-bottom: 1px solid var(--line);
+}
+.hairline-t {
+  border-top: 1px solid var(--line);
+}
+.hairline-l {
+  border-left: 1px solid var(--line);
+}
+.hairline-r {
+  border-right: 1px solid var(--line);
+}
+.hairline-all {
+  border: 1px solid var(--line);
+}
+
+/* Pulse animation for the live dots */
+@keyframes pulse-indigo {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(0.9);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.pulse-dot {
+  animation: pulse-indigo 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* SVG Pipeline animation keyframe */
+@keyframes dashflow {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+
+.animate-dashflow {
+  animation: dashflow 1.2s linear infinite;
+}
+
+/* Support for prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-dashflow {
+    animation: none !important;
+    stroke-dasharray: 4, 4 !important;
+    stroke-dashoffset: 0 !important;
+  }
+  
+  .pulse-dot {
+    animation: none !important;
+  }
+  
+  * {
+    animation-delay: 0s !important;
+    animation-duration: 0s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0s !important;
+    scroll-behavior: auto !important;
+  }
 }
