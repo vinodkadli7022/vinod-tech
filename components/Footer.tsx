@@ -39,6 +39,14 @@ export default function Footer() {
           >
             LinkedIn
           </a>
+          <a
+            href={CONTACT_LINKS.resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-4 decoration-line hover:decoration-indigo hover:text-indigo transition-colors duration-200"
+          >
+            Resume
+          </a>
         </div>
 
         {/* Bottom Bar: Location & Copyright/Motto */}

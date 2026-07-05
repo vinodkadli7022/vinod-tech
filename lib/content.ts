@@ -180,5 +180,6 @@ export const STACK_CATEGORIES: StackCategory[] = [
 export const CONTACT_LINKS = {
   email: "vinodkumarkadli7022@gmail.com",
   github: "https://github.com/vinodkadli7022",
-  linkedin: "https://www.linkedin.com/in/vinodkumar-kadli-b40b91293"
+  linkedin: "https://www.linkedin.com/in/vinodkumar-kadli-b40b91293",
+  resume: "https://drive.google.com/file/d/1XDyx_Po-VDWR7odIzqaY9rteSsI7uIcw/view?usp=sharing"
 };
