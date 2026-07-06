@@ -72,7 +72,7 @@ export default function Hero() {
             <img
               src="/profile.jpg"
               alt="Vinodkumar"
-              className="relative z-10 w-full h-auto grayscale contrast-[1.08] brightness-[1.02] mix-blend-multiply opacity-90 object-cover object-top aspect-[3/4]"
+              className="relative z-10 w-full h-auto grayscale contrast-[1.08] brightness-[1.02] mix-blend-multiply opacity-90 object-cover object-top aspect-[3/4] border border-line"
               loading="eager"
             />
           </div>
