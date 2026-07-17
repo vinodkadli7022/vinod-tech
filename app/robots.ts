@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    // sitemap: 'https://your-domain.com/sitemap.xml', // Add this once you have a production domain
+    sitemap: 'https://vinod.codes/sitemap.xml',
   }
 }

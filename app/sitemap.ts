@@ -1,8 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // Replace with your actual domain when deploying
-  const baseUrl = 'https://vinodkumar.dev' // Placeholder domain
+  const baseUrl = 'https://vinod.codes'
   
   return [
     {
