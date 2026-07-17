@@ -22,10 +22,25 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Vinodkumar — Full-Stack Engineer & AI Agent Builder",
-  description: "Full-stack engineer building multi-agent AI systems — RAG pipelines, orchestration, and production FastAPI services.",
+  description: "Full-stack engineer building multi-agent AI systems, RAG pipelines, and production FastAPI services. Shipping scalable products that solve real business problems.",
+  keywords: ["Vinodkumar", "Full-Stack Engineer", "AI Agent Builder", "FastAPI", "React", "Next.js", "TypeScript", "Python", "Multi-agent systems", "RAG pipelines", "Software Developer", "Bengaluru"],
+  authors: [{ name: "Vinodkumar", url: "https://github.com/vinodkadli7022" }],
+  creator: "Vinodkumar",
+  publisher: "Vinodkumar",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   openGraph: {
     title: "Vinodkumar — Full-Stack Engineer & AI Agent Builder",
-    description: "Full-stack engineer building multi-agent AI systems — RAG pipelines, orchestration, and production FastAPI services.",
+    description: "Full-stack engineer building multi-agent AI systems, RAG pipelines, and production FastAPI services. Shipping scalable products that solve real business problems.",
     type: "website",
     locale: "en_IN",
     siteName: "Vinodkumar Portfolio",
@@ -33,8 +48,11 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Vinodkumar — Full-Stack Engineer & AI Agent Builder",
-    description: "Full-stack engineer building multi-agent AI systems — RAG pipelines, orchestration, and production FastAPI services.",
+    description: "Full-stack engineer building multi-agent AI systems, RAG pipelines, and production FastAPI services.",
   },
+  alternates: {
+    canonical: "/",
+  }
 };
 
 export default function RootLayout({
